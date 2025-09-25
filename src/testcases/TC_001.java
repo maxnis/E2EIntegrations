@@ -8,7 +8,7 @@ public class TC_001 {
 
 	@Test
 	public void testcase1() {
-		System.setProperty("webdriver.chrome.driver", "D:\\Tools\\WebDrivers\\chromedriver-win64\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
 		driver.get("https://www.facebook.com");
 		driver.findElement(By.id("email")).sendKeys("Hello");
