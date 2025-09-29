@@ -1,0 +1,18 @@
+package testcases;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class TC_004 {
+
+	@Test
+	public void testcase4() {
+		System.setProperty("webdriver.chrome.driver", "D:\\Tools\\WebDrivers\\chromedriver-win64\\chromedriver.exe");
+		ChromeDriver driver = new ChromeDriver();
+		driver.get("https://www.facebook.com");
+		driver.findElement(By.id("email")).sendKeys("Hello");
+		driver.findElement(By.id("pass")).sendKeys("Hello");
+		driver.quit();
+	}
+}
